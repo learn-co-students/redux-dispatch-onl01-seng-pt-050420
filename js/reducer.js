@@ -1,6 +1,8 @@
 
 let state = {count: 0};
  
+
+// Reducer
  function changeState(state, action){
   switch (action.type) {
     case 'INCREASE_COUNT':
@@ -17,7 +19,7 @@ function render(){
 }
  
 
-//persisiting atste
+//persisiting state
 function dispatch(action){
   state = changeState(state, action)
   render()
